@@ -63,8 +63,8 @@ public class SecurityConfiguration {
 
                 ).permitAll()
                 .anyRequest()
-                .permitAll()
-//                .authenticated()
+//                .permitAll()
+                .authenticated()
                 .and()
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();

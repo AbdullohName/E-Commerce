@@ -53,7 +53,7 @@ public class AdminServiceImpl implements AdminService {
                 } catch (Exception e) {
                     return ResponseDto.<String>builder()
                             .code(-1)
-                            .success(true)
+                            .success(false)
                             .message(e.getMessage())
                             .build();
                 }
